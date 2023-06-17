@@ -13,11 +13,3 @@ public:
         }
     }
 };
-
-int main()
-{
-    vector<int> test_case1 = {1, 2, 3, 4, 5, 6, 7};
-    Solution sln;
-    sln.rotate(test_case1, 2);
-    return 0;
-}
