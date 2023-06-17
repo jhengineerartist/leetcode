@@ -50,13 +50,3 @@ public:
         elements[loc2] = temp;
     }
 };
-
-int main()
-{
-    vector<int> nums1 = {4, 5, 6, 0, 0, 0};
-    vector<int> nums2 = {1, 2, 3};
-
-    Solution sln;
-    sln.merge(nums1, 3, nums2, 3);
-    return 0;
-}

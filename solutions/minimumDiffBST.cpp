@@ -88,8 +88,3 @@ public:
         return min_diff;
     }
 };
-
-int main()
-{
-    return 0;
-}
