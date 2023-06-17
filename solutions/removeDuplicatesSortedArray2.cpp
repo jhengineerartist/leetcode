@@ -32,11 +32,3 @@ public:
         return last_filtered + 1;
     }
 };
-
-int main()
-{
-    vector<int> test_case_1 = {1, 1, 1, 2, 2, 3};
-    Solution sln;
-    int result = sln.removeDuplicates(test_case_1);
-    return 0;
-}

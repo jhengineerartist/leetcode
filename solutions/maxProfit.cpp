@@ -53,11 +53,3 @@ public:
         return largest;
     }
 };
-
-int main()
-{
-    vector<int> test_case1 = {7, 1, 5, 3, 6, 4};
-    Solution sln;
-    int profit = sln.maxProfit(test_case1);
-    return 0;
-}

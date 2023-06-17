@@ -40,9 +40,9 @@ public:
         return largest_level;
     }
 
-    int populateValuations(unordered_map<int, int> &level_values,
-                           int level,
-                           TreeNode *current_node)
+    void populateValuations(unordered_map<int, int> &level_values,
+                            int level,
+                            TreeNode *current_node)
     {
         level_values[level] += current_node->val;
 
@@ -56,8 +56,3 @@ public:
         }
     }
 };
-
-int main()
-{
-    return 0;
-}

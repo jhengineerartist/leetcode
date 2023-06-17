@@ -36,11 +36,3 @@ public:
         elements[loc2] = temp;
     }
 };
-
-int main()
-{
-    Solution sln;
-    vector<int> nums = {3, 2, 2, 3};
-    int size = sln.removeElement(nums, 4);
-    return 0;
-}
