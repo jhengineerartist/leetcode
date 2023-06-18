@@ -1,12 +1,12 @@
-#include "minCostClimbingStairs.cpp"
+#include "deleteAndEarn.cpp"
 #include <vector>
 // Use this as a quick way to run whatever problem
 // I'm working on
 
 int main()
 {
+    vector<int> test = {3, 4, 2};
     Solution sln;
-    vector<int> test = {10, 15, 20};
-    int result = sln.minCostClimbingStairs(test);
+    int result = sln.deleteAndEarn(test);
     return 0;
 }
