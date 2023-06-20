@@ -11,7 +11,7 @@ public:
         int last_filtered = 0;
         int occurrences = 1;
 
-        for (int i = 1; i < nums.size(); i++)
+        for (size_t i = 1; i < nums.size(); i++)
         {
             if (nums[i] == nums[i - 1])
             {

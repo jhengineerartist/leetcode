@@ -9,7 +9,7 @@ public:
     {
         int last_filtered = 0;
         int previous_element = -101;
-        int current = 0;
+        size_t current = 0;
         while (current < nums.size())
         {
             while (current < nums.size() && nums[current] == previous_element)

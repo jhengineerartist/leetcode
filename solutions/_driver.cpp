@@ -1,12 +1,12 @@
-#include "deleteAndEarn.cpp"
+#include "kRadiusAverage.cpp"
 #include <vector>
 // Use this as a quick way to run whatever problem
 // I'm working on
 
 int main()
 {
-    vector<int> test = {3, 4, 2};
+    vector<int> test = {10000};
     Solution sln;
-    int result = sln.deleteAndEarn(test);
+    vector<int> result = sln.getAverages(test, 0);
     return 0;
 }
