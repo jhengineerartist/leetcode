@@ -29,7 +29,7 @@ public:
             vector<pair<int, int>> neighbors;
             for (auto &dir : directions)
             {
-                pair<int, int> neighbor = make_pair(dir.first + node.first, dir.second + node.second);
+                pair<size_t, size_t> neighbor = make_pair(dir.first + node.first, dir.second + node.second);
                 bool is_inbound = neighbor.first >= 0 &&
                                   neighbor.second >= 0 &&
                                   neighbor.first < grid.size() &&

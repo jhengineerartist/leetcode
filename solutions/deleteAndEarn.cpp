@@ -9,11 +9,10 @@ class Solution
 public:
     int deleteAndEarn(vector<int> &nums)
     {
-        int total_val = 0;
         // value, occurrences
         unordered_map<int, int> total_value_table;
         int max_value = 0;
-        for (int i = 0; i < nums.size(); i++)
+        for (size_t i = 0; i < nums.size(); i++)
         {
             max_value = max(max_value, nums[i]);
             if (total_value_table.find(nums[i]) != total_value_table.end())

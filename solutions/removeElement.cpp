@@ -22,7 +22,7 @@ public:
             }
             lo++;
         }
-        int i = 0;
+        size_t i = 0;
         while (nums[i] != val && i < nums.size())
         {
             i++;

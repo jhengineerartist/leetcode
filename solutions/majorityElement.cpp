@@ -8,9 +8,9 @@ class Solution
 public:
     int majorityElement(vector<int> &nums)
     {
-        unordered_map<int, int> element_counter;
+        unordered_map<size_t, size_t> element_counter;
 
-        int i = 0;
+        size_t i = 0;
         while (i < nums.size())
         {
             element_counter[nums[i]]++;

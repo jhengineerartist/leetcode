@@ -15,14 +15,14 @@ public:
             return day_price1.second > day_price2.second;
         };
 
-        for (int i = 0; i < prices.size(); i++)
+        for (size_t i = 0; i < prices.size(); i++)
         {
             prices_with_day.push_back(make_pair(i, prices[i]));
         }
 
         sort(prices_with_day.begin(), prices_with_day.end(), price_gtr_than_fnc);
 
-        vector<pair<int, int>> only_increasing_days;
+        vector<pair<size_t, int>> only_increasing_days;
         int latest_day = -1;
         for (pair<int, int> &day : prices_with_day)
         {
@@ -35,7 +35,7 @@ public:
 
         vector<int> max_profits;
         int max_price_day_index = 0;
-        for (int day = 0; day < prices.size(); day++)
+        for (size_t day = 0; day < prices.size(); day++)
         {
             if (day > only_increasing_days[max_price_day_index].first)
             {

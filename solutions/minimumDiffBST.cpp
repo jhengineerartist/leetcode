@@ -78,7 +78,6 @@ public:
         if (root->right != nullptr)
         {
             int right_subtree_min = getMinimumDifference(root->right);
-            TreeNode *smallest_larger_value_node = getSmallestSubNode(root->right);
             int right_immediate_min = getSmallestSubNode(root->right)->val - root->val;
             right_diff = giveSmallerPositiveNumber(right_subtree_min, right_immediate_min);
         }
